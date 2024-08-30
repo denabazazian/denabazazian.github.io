@@ -171,8 +171,54 @@ She had long-term research visits at NAVER LABS Europe in Grenoble, France in 20
 <hr>
 <hr>
 
+<!-- Localised_NeRF -->
+            <div class="row">
+              <div class="col-xs-10 col-sm-4 col-md-4">
+                <a class="thumbnail">
+                  <img src="img/Local_NeRF.png" alt="Localised-NeRF: Specular Highlights and Colour Gradient Localising in NeRF"> <!-- width="400" height="400" -->
+                </a>
+              </div>
+              <div class="col-xs-12 col-sm-8 col-md-8">
+                <strong> Localised-NeRF: Specular Highlights and Colour Gradient Localising in NeRF </strong><br>
+		Selvaratnam, D., <u> Bazazian, D. </u> <br>
+                <em> CVPR w, </em> 2024.<br>
+		<!--<a href=""> <button type="button" class="btn btn-primary btn-xs"> pdf </button> </a> -->
+		<a href="https://openaccess.thecvf.com/content/CVPR2024W/NRI/papers/Selvaratnam_Localised-NeRF_Specular_Highlights_and_Colour_Gradient_Localising_in_NeRF_CVPRW_2024_paper.pdf"><button type="button" class="btn btn-primary btn-xs">PDF</button></a>
+		
+		<a href="https://github.com/Dharmendra04/Localised-NeRF"><button type="button" class="btn btn-primary btn-xs">Code</button></a>
 
-<!-- GPr-Net: -->
+          <!-- <a href="https://github.com/denabazazian/DCG-Net"><button type="button" class="btn btn-primary btn-xs">Code</button></a> -->
+		<button type="button" class="btn btn-primary btn-xs" data-toggle="collapse" data-target="#bibtext14">BibTeX</button>
+                <div id="bibtext14" class="collapse">
+		  <div>
+                       @inproceedings{selvaratnam2024localised,<br>
+                         title={Localised-NeRF: Specular Highlights and Colour Gradient Localising in NeRF},<br>
+                         author={Selvaratnam, Dharmendra and Bazazian, Dena},<br>
+                         booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},<br>
+                         pages={2791--2801},<br>
+                         year={2024}<br>
+                       }<br>
+			  
+		       </div>
+                </div>
+		      
+		      
+                <button type="button" class="btn btn-primary btn-xs" data-toggle="collapse" data-target="#abstract14">abstract</button>
+                <div id="abstract14" class="collapse">
+		  <div>
+Neural Radiance Field (NeRF) based systems predominantly operate within the RGB (Red, Green, and Blue) space; however, the distinctive capability of the HSV (Hue, Saturation, and Value) space to discern between specular and diffuse regions are seldom utilised in the literature. We introduce Localised-NeRF, which projects the queried pixel point onto multiple training images to obtain a multi-view feature representation on HSV space and gradient space to obtain important features that can be used to synthesise novel view colour. This integration is pivotal in identifying specular highlights within scenes, thereby enriching the model’s understanding of specular changes as the viewing angle alters. Our proposed Localised-NeRF model uses an attention-driven approach that not only maintains local view direction consistency but also leverages image-based features namely the HSV colour space and colour gradients. These features serve as effective indirect priors for both the training and testing phases to predict the diffuse and specular colour. Our model exhibits competitive performance with prior NeRF-based models, as demonstrated on the Shiny Blender and Synthetic datasets. The code of Localised-NeRF is publicly available.			  
+                  </div>
+                </div>
+              </div>
+            </div>
+		  
+<!-- end of Localised_NeRF -->
+		  
+<hr>	
+
+
+		  
+<!-- GPr-Net -->
             <div class="row">
               <div class="col-xs-10 col-sm-4 col-md-4">
                 <a class="thumbnail">
@@ -180,8 +226,8 @@ She had long-term research visits at NAVER LABS Europe in Grenoble, France in 20
                 </a>
               </div>
               <div class="col-xs-12 col-sm-8 col-md-8">
-                <strong> GPr-Net: Geometric Prototypical Network for Point Cloud Few-Shot Learning </strong><be>
-		Anvekar. T, <u> Bazazian, D. </u> <br>
+                <strong> GPr-Net: Geometric Prototypical Network for Point Cloud Few-Shot Learning </strong><br>
+		Anvekar, T., <u> Bazazian, D. </u> <br>
                 <em> CVPR w, </em> 2023.<br>
 		<!--<a href=""> <button type="button" class="btn btn-primary btn-xs"> pdf </button> </a> -->
 		<a href="https://openaccess.thecvf.com/content/CVPR2023W/DLGC/papers/Anvekar_GPr-Net_Geometric_Prototypical_Network_for_Point_Cloud_Few-Shot_Learning_CVPRW_2023_paper.pdf"><button type="button" class="btn btn-primary btn-xs">PDF</button></a>
@@ -190,7 +236,7 @@ She had long-term research visits at NAVER LABS Europe in Grenoble, France in 20
 
           <!-- <a href="https://github.com/denabazazian/DCG-Net"><button type="button" class="btn btn-primary btn-xs">Code</button></a> -->
 		<button type="button" class="btn btn-primary btn-xs" data-toggle="collapse" data-target="#bibtext13">BibTeX</button>
-                <div id="bibtext12" class="collapse">
+                <div id="bibtext13" class="collapse">
 		  <div>
 			@inproceedings{anvekar2023gpr, <br/>
                         title={Gpr-net: Geometric prototypical network for point cloud few-shot learning},<br/>
@@ -205,7 +251,7 @@ She had long-term research visits at NAVER LABS Europe in Grenoble, France in 20
 		      
 		      
                 <button type="button" class="btn btn-primary btn-xs" data-toggle="collapse" data-target="#abstract13">abstract</button>
-                <div id="abstract12" class="collapse">
+                <div id="abstract13" class="collapse">
 		  <div>
 	In the realm of 3D-computer vision applications, point cloud few-shot learning plays a critical role. However, it poses an arduous challenge due to the sparsity, irregularity, and unordered nature of the data. Current methods rely on complex local geometric extraction techniques such as convolution, graph, and attention mechanisms, along with extensive data-driven pre-training tasks. These approaches contradict the fundamental goal of few-shot learning, which is to facilitate efficient learning. To address this issue, we propose GPr-Net (Geometric Prototypical Network), a lightweight and computationally efficient geometric prototypical network that captures the intrinsic topology of point clouds and achieves superior performance. Our proposed method, IGI++ (Intrinsic Geometry Interpreter++) employs vector-based hand-crafted intrinsic geometry interpreters and Laplace vectors to extract and evaluate point cloud morphology, resulting in improved representations for FSL (Few-Shot Learning). Additionally, Laplace vectors enable the extraction of valuable features from point clouds with fewer points. To tackle the distribution drift challenge in few-shot metric learning, we leverage hyperbolic space and demonstrate that our approach handles intra and inter-class variance better than existing point cloud few-shot learning methods. Experimental results on the ModelNet40 dataset show that GPr-Net out-performs state-of-the-art methods in few-shot learning on point clouds, achieving utmost computational efficiency that is 170× better than all existing works. The code is publicly available at https://github.com/TejasAnvekar/GPr-Net 
 			  
@@ -213,14 +259,9 @@ She had long-term research visits at NAVER LABS Europe in Grenoble, France in 20
                 </div>
               </div>
             </div>
-<!-- end of GPr-Net: -->
+<!-- end of GPr-Net -->
 		  
 <hr>	
-
-
-
-
-
 
 		  
 <!-- 2D_complexity -->
